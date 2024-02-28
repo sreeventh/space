@@ -1,0 +1,23 @@
+.pagination-container {
+    margin-top: 20px;
+    background: transparent;
+}
+
+.pagination-container button {
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #03060a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    height: 20%;
+    width: 10%;
+}
+
+.pagination-container button:hover {
+    background-color: #f0f2f5;
+    color: #03060a;
+}
