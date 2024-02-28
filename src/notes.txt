@@ -1,1 +1,8 @@
 how many times are you fetching to store bg image
+
+
+
+
+BugAlert:
+
+on redirecting to apod bg img persists but upon refresh no

@@ -4,10 +4,8 @@
     margin: 0 auto;
     margin-bottom: 40px;
     padding: 20px;
-    border: 1px solid #030303;
+    /* border: 1px solid #030303; */
     border-radius: 5px;
-    /* background-color: #f9f9f9;
-     */
      background: transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -28,7 +26,7 @@
 /* Styling for the date and author */
 .apod-info {
     font-size: 14px;
-    color: #666;
+    color: #010000;
     margin-bottom: 10px;
 }
 /* Styling for the description */
