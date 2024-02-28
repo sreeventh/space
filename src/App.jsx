@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Card from './components/Card';
 
 
+
 function App() {
 
   const [bgimg, setBgimg] = useState("");
@@ -38,6 +39,7 @@ function App() {
           title="APOD"
           desc="Astronomy Picture of the Day"
           butt="Learn more"
+          red = "/apod"
         />
         <Card
           title="Asteroids"
