@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import Card from './components/Card';
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
   useEffect(() => {
     async function fetchBackgroundImage() {
       try {
-        const response = await fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY");
+        const response = await fetch("https://api.nasa.gov/planetary/apod?api_key=0CUMhfSaDToILcxkT6GPg5SQ6GHnPPJdSh5DBMI6");
         const bgData = await response.json();
         setBgimg(bgData.url);
       } catch (error) {
@@ -22,16 +23,33 @@ function App() {
 
   useEffect(() => {
     document.body.style.backgroundImage = `url('${bgimg}')`;
-    document.body.style.backgroundSize = 'cover'; // Optionally adjust background size
-    document.body.style.backgroundRepeat = 'no-repeat'; // Optionally adjust background repeat
-    document.body.style.backgroundAttachment = 'fixed'; // Optionally adjust background attachment
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundAttachment = 'fixed';
   }, [bgimg]);
 
 
 
   return (
     <div>
-      <h1 className='anta-regular' id='heading-space'>Space Explorer</h1>
+      <h1 className='anta-regular' id='heading'>Space Explorer</h1>
+      <div className='container'>
+        <Card
+          title="APOD"
+          desc="Astronomy Picture of the Day"
+          butt="Learn more"
+        />
+        <Card
+          title="Asteroids"
+          desc="Deep Dive"
+          butt="Analyse"
+        />
+        <Card
+          title="TECH"
+          desc="Latest Patents & Software "
+          butt="Discover"
+        />
+      </div>
     </div>
   );
 }
