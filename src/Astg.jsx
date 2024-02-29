@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Anames from "./components/Anames";
 
+
 export default function Astg(){
     let {id} = useParams();
     const [ddd,setDdd] = useState([]);
@@ -24,6 +25,7 @@ export default function Astg(){
                     asname = {a.name}
                 />
             ))}
+           
         </>
     )
 }
