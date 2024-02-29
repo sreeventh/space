@@ -18,7 +18,8 @@ export default function Astg(){
         getgr();
     },[id])
     return(
-        <>
+        <div className="anta-regular">
+        <h2 style={{textAlign:"center",fontSize:"40px"}}>List of Asteroids Observed on {id}</h2>
             {ddd.map((a,index)=>(
                 <Anames
                     key = {index}
@@ -27,6 +28,6 @@ export default function Astg(){
                 />
             ))}
            
-        </>
+        </div>
     )
 }

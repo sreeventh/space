@@ -20,8 +20,8 @@ export default function Asteroid(){
 
 
     return(
-        <div>
-        <h2 className="dtitle">Asteroids Date-wise</h2>
+        <div className="anta-regular" style={{textAlign:"center"}}>
+        <h2 className="dtitle" style={{fontSize:"40px"}}>Asteroids Date-wise</h2>
             {ddates.map((a,index)=>(
                 <Dated
                     key={index}

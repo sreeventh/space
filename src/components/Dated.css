@@ -10,15 +10,10 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for the title */
-.dtitle {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
 /* Styling for the date and author */
 .dinfo {
-    font-size: 14px;
-    color: #010000;
+    font-size: 25px;
+    color: #f9f7f7;
     margin-bottom: 10px;
+    text-align: center;
 }
