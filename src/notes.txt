@@ -1,8 +1,12 @@
 how many times are you fetching to store bg image
 
+self invoke function
+
 
 
 
 BugAlert:
 
 on redirecting to apod bg img persists but upon refresh no
+
+set end date dynamic in asteroid

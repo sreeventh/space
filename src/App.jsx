@@ -46,6 +46,7 @@ function App() {
           title="Asteroids"
           desc="Deep Dive"
           butt="Analyse"
+          red="/asteroid"
         />
         <Card
           title="TECH"
