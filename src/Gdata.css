@@ -1,0 +1,10 @@
+#cont {
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: space-between;
+    /* Distribute items evenly along the main axis */
+  }
+
+.pink{
+    color: palevioletred;
+}

@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div>
-      <h1 className='anta-regular' id='heading'>Space Explorer</h1>
+      <h1 className='anta-regular' id='heading'>NASA Space Explorer</h1>
       <div className='container'>
         <Card
           title="APOD"
