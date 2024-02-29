@@ -6,28 +6,29 @@ import Card from './components/Card';
 
 function App() {
 
-  const [bgimg, setBgimg] = useState("");
+  // const [bgimg, setBgimg] = useState("");
 
-  useEffect(() => {
-    async function fetchBackgroundImage() {
-      try {
-        const response = await fetch("https://api.nasa.gov/planetary/apod?api_key=0CUMhfSaDToILcxkT6GPg5SQ6GHnPPJdSh5DBMI6");
-        const bgData = await response.json();
-        setBgimg(bgData.url);
-      } catch (error) {
-        console.error('Error fetching background image:', error);
-      }
-    }
+  // useEffect(() => {
+  //   async function fetchBackgroundImage() {
+  //     try {
+  //       const response = await fetch("https://api.nasa.gov/planetary/apod?api_key=0CUMhfSaDToILcxkT6GPg5SQ6GHnPPJdSh5DBMI6");
+  //       const bgData = await response.json();
+  //       setBgimg(bgData.url);
+  //     } catch (error) {
+  //       console.error('Error fetching background image:', error);
+  //     }
+  //   }
 
-    fetchBackgroundImage();
-  }, []);
+  //   fetchBackgroundImage();
+  // }, []);
 
-  useEffect(() => {
-    document.body.style.backgroundImage = `url('${bgimg}')`;
-    document.body.style.backgroundSize = 'cover';
-    document.body.style.backgroundRepeat = 'no-repeat';
-    document.body.style.backgroundAttachment = 'fixed';
-  }, [bgimg]);
+  // useEffect(() => {
+  //   document.body.style.backgroundImage = `url('${bgimg}')`;
+  //   document.body.style.backgroundSize = 'cover';
+  //   document.body.style.backgroundRepeat = 'no-repeat';
+  //   document.body.style.backgroundAttachment = 'fixed';
+  // }, [bgimg]);
+
 
 
 
@@ -39,7 +40,7 @@ function App() {
           title="APOD"
           desc="Astronomy Picture of the Day"
           butt="Learn more"
-          red = "/apod"
+          red="/apod"
         />
         <Card
           title="Asteroids"

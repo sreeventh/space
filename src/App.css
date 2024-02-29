@@ -17,3 +17,10 @@
   justify-content: space-between;
   /* Distribute items evenly along the main axis */
 }
+
+body{
+  background-image: url('https://apod.nasa.gov/apod/image/2402/TwilightShades_Giannobile_1080.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
