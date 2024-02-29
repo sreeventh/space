@@ -23,6 +23,7 @@ export default function Astg(){
                 <Anames
                     key = {index}
                     asname = {a.name}
+                    index={index}
                 />
             ))}
            

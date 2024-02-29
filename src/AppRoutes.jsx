@@ -13,7 +13,7 @@ export default function AppRoutes(){
                 <Route path="/apod" element={<Apod/>}/>
                 <Route path="/asteroid" element={<Asteroid/>}/>
                 <Route path="/asteroid/:id" element={<Astg/>}></Route>
-                <Route path="/asteroid/:id/:name" element={<GraphData/>}/>
+                <Route path="/asteroid/:id/:index" element={<GraphData/>}/>
             </Routes>
         </BrowserRouter>
     )

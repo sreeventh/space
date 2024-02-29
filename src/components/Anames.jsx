@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 export default function Anames(props) {
     return (
         <div className="dcontainer">
-            <Link style={{textDecoration:"none"}} to={`${props.asname}`}>
+            <Link style={{textDecoration:"none"}} to={`${props.index}`}>
                 <p className="dinfo">{props.asname}</p>
             </Link>
         </div>

@@ -2,6 +2,7 @@ how many times are you fetching to store bg image
 
 self invoke function
 
+look how many times fetching and how many times actually needed
 
 
 
