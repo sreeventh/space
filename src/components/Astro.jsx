@@ -7,6 +7,9 @@ export default function Astro(props) {
         if (event.key === "y") {
             setVis(true);
         }
+        if(event.key==="x"){
+            setVis(false)
+        }
     }
     console.log(vis);
     useEffect(() => {
