@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Tablepod from "./components/Tablepod";
-import "./pagination.css"; // Import CSS for pagination styles
+
+import Pages from "./components/Pages";
 
 export default function Apod() {
     const [picData, setPicdata] = useState([]);
-    const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 5;
+    const postsperpage = 1;
+    const [currentPage,setCur] = useState(1);
+
+   
 
     useEffect(() => {
         async function getMonthPics() {
@@ -18,18 +21,13 @@ export default function Apod() {
         getMonthPics();
     }, []);
 
-    const indexOfLastItem = currentPage * itemsPerPage;
-    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    const currentItems = picData.slice(indexOfFirstItem, indexOfLastItem);
-
-    const paginate = (pageNumber) => {
-        setCurrentPage(pageNumber);
-        window.scrollTo(0, 0); // Scroll to the top of the page
-    };
+    const lastPostIndex = currentPage*postsperpage;
+    const firstPostIndex = lastPostIndex-postsperpage;
+    const currentPostsDisplaying = picData.slice(firstPostIndex,lastPostIndex);
 
     return (
         <div className="apod-container">
-            {currentItems.map((a, index) => (
+            {currentPostsDisplaying.map((a, index) => (
                 <Tablepod
                     key={index}
                     picUrl={a.url}
@@ -39,11 +37,11 @@ export default function Apod() {
                     picA={a.copyright}
                 />
             ))}
-            <div className="pagination-container">
-                {Array.from({ length: Math.ceil(picData.length / itemsPerPage) }, (_, i) => (
-                    <button key={i} onClick={() => paginate(i + 1)}>{i + 1}</button>
-                ))}
-            </div>
+            <Pages
+                totalPosts={picData.length}
+                postsPerPage={postsperpage}
+                setCur={setCur}
+            />
         </div>
     );
 }
