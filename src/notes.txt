@@ -16,7 +16,6 @@ set end date dynamic in asteroid
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-pagination 
 bar graph
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

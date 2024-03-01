@@ -58,8 +58,8 @@ export default function GraphData() {
             {
                 label: 'Asteroid Size (kilometers)',
                 data: [minDiameter, maxDiameter],
-                backgroundColor: ['pink,blue'],
-                borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)'],
+                backgroundColor: ['pink,aqua'],
+                borderColor: ['pink','aqua'],
                 borderWidth: 1
             }
         ]
