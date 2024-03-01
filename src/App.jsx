@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Card from './components/Card';
 import Astro from './components/Astro';
 import { useNavigate } from "react-router-dom"
@@ -51,14 +51,6 @@ function App() {
         throw new Error('Failed to fetch data');
       }
       const data = await response.json();
-      // console.log(data);
-      // console.log(ad);
-      // console.log(ad[a]);
-      // const sd = ad[a];
-      // setN(sd["nationality"]);
-      // setDob(sd["date_of_birth"])
-      // setM(sd["missions"][0]["mission_date"]);
-      // setSx(sd["missions"][0]["spacecraft"])
       Navigate("/abox", { state: { a: a, data: data } });
 
     } catch (error) {
